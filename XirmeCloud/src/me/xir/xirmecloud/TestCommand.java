@@ -5,6 +5,7 @@ import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
 class TestCommand extends Command {
+	@SuppressWarnings("unused")
 	private XirmeCloud plugin;
 	
 	public TestCommand(XirmeCloud plugin) {
