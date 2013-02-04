@@ -1,29 +1,26 @@
+//EXAMPLE COMMAND SETUP
+
 package me.xir.xirmecloud;
 
+import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
-import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
-class TestCommand extends Command {
-	@SuppressWarnings("unused")
-	private XirmeCloud plugin;
+public class TestCommand extends Command {
 	
-	public TestCommand(XirmeCloud plugin) {
-		super("TestCommand");
-		this.plugin = plugin;
+	public TestCommand(String name) {
+		super(name);
 	}
-
+	
 	@Override
 	public void execute(CommandSender sender, String[] args) {
-		// TODO Auto-generated method stub
-		if (sender instanceof ProxiedPlayer) {
-			ProxiedPlayer p = (ProxiedPlayer) sender;
-			if (p.hasPermission("xirmecloud.testcommand")) {
-				sender.sendMessage("It works!");
-				
-			}
+		if(!sender.hasPermission("xirmecloud.testcommand")){
+			//set permission node
+			sender.sendMessage(ChatColor.RED+"You dont have permission to do that!");
+			//if sender does not have perms, return this
+			return;
 		}
-
+		//do stuff
+		sender.sendMessage(ChatColor.BLACK+"It works!");
 	}
-
 }
