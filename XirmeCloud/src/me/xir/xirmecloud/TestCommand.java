@@ -14,13 +14,6 @@ public class TestCommand extends Command {
 	
 	@Override
 	public void execute(CommandSender sender, String[] args) {
-		if(!sender.hasPermission("xirmecloud.testcommand")){
-			//set permission node
-			sender.sendMessage(ChatColor.RED+"You dont have permission to do that!");
-			//if sender does not have perms, return this
-			return;
-		}
-		//do stuff
-		sender.sendMessage(ChatColor.BLACK+"It works!");
+		sender.sendMessage(args.toString());
 	}
 }
