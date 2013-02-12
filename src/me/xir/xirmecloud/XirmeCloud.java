@@ -1,6 +1,9 @@
 package me.xir.xirmecloud;
 
 import me.xir.xirmecloud.commands.*;
+import me.xir.xirmecloud.commands.info.*;
+import me.xir.xirmecloud.commands.teleportation.*;
+
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -15,7 +18,7 @@ public class XirmeCloud extends Plugin{
 	public void onEnable() {
 		
 		//Register commands
-		ProxyServer.getInstance().getPluginManager().registerCommand(new commands_test("testcommand"));
-		ProxyServer.getInstance().getPluginManager().registerCommand(new commands_website("website"));
+		ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_test("testcommand"));
+		ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_website("website"));
 	}
 }

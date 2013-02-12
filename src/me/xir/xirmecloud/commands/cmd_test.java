@@ -4,9 +4,9 @@ import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.plugin.Command;
 import net.md_5.bungee.api.ChatColor;
 
-public class commands_test extends Command {
+public class cmd_test extends Command {
 	
-	public commands_test(String name) {
+	public cmd_test(String name) {
 		super(name);
 	}
 	
