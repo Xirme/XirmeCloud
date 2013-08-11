@@ -18,8 +18,8 @@ public class XirmeCloud extends Plugin{
 	public void onEnable() {
 		
 		//Register commands
-		ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_test("testcommand"));
-		ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_website("website"));
-		ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_pvp("pvp"));
+		//ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_test("testcommand"));
+		//ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_website("website"));
+		//ProxyServer.getInstance().getPluginManager().registerCommand(new cmd_pvp("pvp"));
 	}
 }
