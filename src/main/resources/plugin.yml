@@ -1,0 +1,4 @@
+name: ${name}
+version: ${version}-${build.version}
+author: Xirme Community
+main: me.xir.xirmecloud.XirmeCloud
