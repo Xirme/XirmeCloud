@@ -1,8 +1,8 @@
 package main.java.me.xir.xirmecloud;
 
-import me.xir.xirmecloud.commands.*;
-import me.xir.xirmecloud.commands.info.*;
-import me.xir.xirmecloud.commands.teleportation.*;
+import main.java.me.xir.xirmecloud.commands.*;
+import main.java.me.xir.xirmecloud.commands.info.*;
+import main.java.me.xir.xirmecloud.commands.teleportation.*;
 
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;

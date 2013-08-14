@@ -1,4 +1,4 @@
 name: ${name}
 version: ${version}-${build.version}
 author: Xirme Community
-main: me.xir.xirmecloud.XirmeCloud
+main: main.java.me.xir.xirmecloud.XirmeCloud
